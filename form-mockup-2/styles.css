@@ -2,29 +2,151 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 body{
+    display: grid;
     background-color: lightblue;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    font-family: "Playfair Display", serif;
+}
+section{
+    display: grid;
+    border-radius: 20px;
 }
 .contact{
     display: grid;
-    background-color: lightpink;
-    grid-template-areas: 
-    "image title space"
-    "image name contact-p"
-    "image spacer arroba-p"
-    "image email based-p"
-    "image spacer new-p"
-    ""
-    
-    ;
+    background-color: rgb(232, 223, 224);
+    padding: 60px 80px;
+    row-gap: 10px;
+    column-gap: 30px;
+    grid-template-rows: 250px 220px;
+    grid-template-columns: 320px 300px 200px;
+    justify-self: center;
+}
+
+.image{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.contact-div{
+    margin-top: 40px;
+}
+form{
+    display: grid;
+    row-gap: 25px;
+    grid-template-rows: 90px 50px 50px 50px 45px;
+    grid-template-columns: 250px;
+    justify-self: center;
+}
+
+input{
+    border: none;
+    border-bottom: 3px solid rgb(9, 0, 92);
+    font-size: 15px;
+    height: 100%;
+    width: 80%;
+    background-color: rgb(232, 223, 224);
+}
+
+.title{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.full-name{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.email{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.message{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+.button{
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    margin-top: 10px;
+}
+
+button{
+    border-radius: 20px;
+    padding: 5px;
+    width: 80%;
+    color: white;
+    height: 100%;
+    background-color: rgb(9, 0, 92);
 }
 
 .image img{
-    width: 320px;
+    width: 300px;
     border-radius: 0px 70px 0px 70px;
 }
 
 svg{
     width: 25px;
+}
+
+.aside-div{
+    margin-top: 160px;
+    
+}
+aside{
+    font-size: 16px;
+    color: rgb(9, 0, 92);
+    display: grid;
+    width: 130px;
+    font-family: "Lato";
+    align-self: end;
+    justify-self: center;
+    row-gap: 20px;
+    grid-template-rows: 50px 70px 25px;
+}
+.con{
+    grid-template-rows: 1 / 2;
+}
+.bas{
+    margin-top: 12px;
+    grid-template-rows: 2 / 3;
+}
+
+.links{
+    margin-top: 75px;
+    grid-template-rows: 3 / 4;
+}
+ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 25px 25px 25px;
+    grid-template-rows: 25px;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.first{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1 / 2;
+}
+
+.second{
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 1 / 2;
+}
+.third{
+    grid-template-columns: 3 / 4;
+    grid-template-rows: 1 / 2;
 }
