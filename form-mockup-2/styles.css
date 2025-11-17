@@ -117,16 +117,16 @@ aside{
     grid-template-rows: 50px 70px 25px;
 }
 .con{
-    grid-template-rows: 1 / 2;
+    grid-row: 1 / 2;
 }
 .bas{
     margin-top: 12px;
-    grid-template-rows: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .links{
     margin-top: 75px;
-    grid-template-rows: 3 / 4;
+    grid-row: 3 / 4;
 }
 ul{
     display: grid;
@@ -138,15 +138,15 @@ ul{
 }
 
 .first{
-    grid-template-columns: 1 / 2;
-    grid-template-rows: 1 / 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .second{
-    grid-template-columns: 2 / 3;
-    grid-template-rows: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 .third{
-    grid-template-columns: 3 / 4;
-    grid-template-rows: 1 / 2;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }

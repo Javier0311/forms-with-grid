@@ -5,7 +5,12 @@
 }
 body{
     font-family: "Stack Sans Text";
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
 }
+
 
 section{
     display: grid;
@@ -14,6 +19,25 @@ section{
     width: 550px;
     height: 450px;
     padding: 80px 60px;
+
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    overflow: hidden;
+
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 80, 203, 0.85);
+    z-index: 1;
 }
 
 #section{   
@@ -22,6 +46,7 @@ section{
     grid-template-columns: 200px 200px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+    z-index: 2;
 }
 
 h1{
